@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>Welcome to STIH Group</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="author" content="John">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+        <!-- favicon icon -->
+       <meta http-equiv="refresh" content="3000">
+        <!-- style sheets and font icons  -->
+        <link rel="stylesheet" type="text/css" href="index_files/font-icons.min.css">
+        <link rel="stylesheet" type="text/css" href="index_files/theme-vendors.min.css">
+        <link rel="stylesheet" type="text/css" href="index_files/style.css">
+        <link rel="stylesheet" type="text/css" href="index_files/responsive.css">
+    <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style></head>
+    <body data-mobile-nav-style="classic" data-new-gr-c-s-check-loaded="8.902.0" data-gr-ext-installed="" style="overflow: hidden !important;">
+        <!-- start header -->
+        <header class="">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent border-bottom border-color-white-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
+                <div class="container-fluid nav-header-container">
+                    <!-- start logo -->
+                    <div class="col-auto col-sm-6 col-lg-2 me-auto ps-lg-0">
+
+                    </div>
+                    <div class="col-auto col-lg-8 menu-order px-lg-0">
+                        <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                            <span class="navbar-toggler-line"></span>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav" style="margin-top:100px">
+        <font size="8"></font></div>
+                    </div>
+                    <div class="col-auto col-lg-2 text-end pe-0">
+					<div id="current-time" style="margin-top:25px;margin-right:15px"></div>
+<script>
+function setCurrentTime() {
+  var myDate = new Date();
+
+  let daysList = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  let monthsList = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Aug', 'Oct', 'Nov', 'Dec'];
+
+
+  let date = myDate.getDate();
+//  let month = monthsList[myDate.getMonth()+1];
+  let month = monthsList[myDate.getMonth()];
+  let year = myDate.getFullYear();
+  let day = daysList[myDate.getDay()];
+
+  let today = `${date} ${month} ${year}, ${day}`;
+
+  let amOrPm;
+  let twelveHours = function() {
+    if (myDate.getHours() > 12) {
+      amOrPm = 'PM';
+      let twentyFourHourTime = myDate.getHours();
+      let conversion = twentyFourHourTime - 12;
+      return `${conversion}`
+
+    } else {
+      amOrPm = 'AM';
+      return `${myDate.getHours()}`
+    }
+  };
+  let hours = twelveHours();
+  let minutes = myDate.getMinutes();
+  let seconds = myDate.getSeconds();
+if(minutes<10)
+minutes='0'+minutes;
+if(seconds<10)
+seconds='0'+seconds;
+
+  let currentTime = `${hours}:${minutes}:${seconds} ${amOrPm}`;
+  
+  document.getElementById('current-time').innerText = today + ' ' + currentTime
+  
+  if(seconds==0)  
+  document.getElementById('a').style.backgroundImage="url(images/bg/a1.jpg)";
+  if(seconds==12)  
+  document.getElementById('a').style.backgroundImage="url(images/bg/a2.jpg)";
+    else if(seconds==24)  
+  document.getElementById('a').style.backgroundImage="url(images/bg/a3.jpg)";
+    else if(seconds==36)  
+  document.getElementById('a').style.backgroundImage="url(images/bg/a4.jpg)";
+    else if(seconds==48)  
+  document.getElementById('a').style.backgroundImage="url(images/bg/a5.jpg)";
+
+  
+}
+
+setInterval(function() {
+  setCurrentTime();
+}, 1000);
+</script>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- end header -->
+        <div class="main-content" style="margin-top:-25px">
+            <!-- start section -->
+            <section class="p-0">
+                <div class="container-fluid position-relative">
+                    <div class="row">
+                        <div class="swiper-container white-move full-screen p-0 md-h-650px sm-h-500px swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events" data-slider-options="{ &quot;slidesPerView&quot;: 1, &quot;loop&quot;: true, &quot;autoplay&quot;: { &quot;delay&quot;: 4500, &quot;disableOnInteraction&quot;: false },  &quot;pagination&quot;: { &quot;el&quot;: &quot;.swiper-pagination&quot;, &quot;clickable&quot;: true }, &quot;navigation&quot;: { &quot;nextEl&quot;: &quot;.swiper-button-next-nav&quot;, &quot;prevEl&quot;: &quot;.swiper-button-previous-nav&quot; }, 
+
+                                <!-- start slider item -->
+                                <div class="swiper-slide cover-background" id="a" style="background-image: url(&quot;images/bg/b1.jpg&quot;); width: 1920px;" data-swiper-slide-index="1" role="group" aria-label="2 / 3">
+                                    <div class="container h-100">
+                                        <div class="row justify-content-center h-100">
+                                            <div class="col-12 col-xl-6 col-sm-7 d-flex flex-column justify-content-center text-center h-100">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end slider item -->
+                       
+
+
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                    </div>
+                </div>
+            </section>
+            <!-- end section -->
+
+
+
+
+        </div>
+
+        <!-- start scroll to top -->
+<a class="weatherwidget-io" href="https://forecast7.com/en/22d40114d11/hong-kong/" data-label_1="HONG KONG" data-label_2="WEATHER" data-theme="original" >HONG KONG WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+
+
+</script>
+        <!-- end scroll to top -->
+        <!-- javascript -->
+        <script type="text/javascript" src="index_files/jquery.min.js"></script>
+        <script type="text/javascript" src="index_files/theme-vendors.min.js"></script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
